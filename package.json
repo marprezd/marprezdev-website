@@ -38,6 +38,12 @@
     "wrangler": "^4.43.0"
   },
   "pnpm": {
-    "onlyBuiltDependencies": []
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "rclone.js",
+      "sharp",
+      "unrs-resolver",
+      "workerd"
+    ]
   }
 }
