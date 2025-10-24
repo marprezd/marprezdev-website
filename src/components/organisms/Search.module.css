@@ -1,0 +1,39 @@
+.input {
+  border: 1px solid light-dark(var(--mantine-color-cyan-6), var(--mantine-color-cyan-4));
+}
+
+.description {
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-6));
+}
+
+.searchResultList {
+  background-color: var(--mantine-color-body);
+  margin-top: var(--mantine-spacing-sm);
+  align-items: stretch;
+  justify-content: center;
+  gap: var(--mantine-spacing-md);
+}
+
+.searchResultCard {
+  box-shadow: var(--mantine-shadow-md);
+  border-radius: var(--mantine-radius-md);
+  padding: var(--mantine-spacing-md);
+  width: 100%;
+}
+
+.searchResultExcerpt {
+  font-size: var(--mantine-font-size-sm);
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-4));
+}
+
+.searchResultBadge {
+  text-transform: none;
+}
+
+.searchCommand {
+  font-size: var(--mantine-font-size-xs);
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-6));
+  border-top: 1px solid light-dark(var(--mantine-color-gray-4), var(--mantine-color-gray-7));
+  padding-top: var(--mantine-spacing-sm);
+  margin-top: var(--mantine-spacing-sm);
+}

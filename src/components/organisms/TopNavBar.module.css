@@ -1,0 +1,49 @@
+.navContainer {
+  height: 60px;
+  padding: 0 var(--mantine-spacing-md);
+}
+
+.navGroup {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktopNav {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--mantine-spacing-xs);
+  flex-wrap: wrap;
+}
+
+.actionsContainer {
+  height: 64%;
+  gap: var(--mantine-spacing-xs);
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-8)); */
+  border: 1px solid light-dark(var(--mantine-color-gray-4), var(--mantine-color-dark-4));
+  border-radius: var(--mantine-radius-xl);
+  padding: 0.1rem 0.3rem 0 0.3rem;
+}
+
+@media (min-width: 48em) {
+  .actionsContainer {
+    gap: 0.3rem;
+  }
+}
+
+.burgerButton {
+  @media (min-width: 48em) {
+    display: none;
+  }
+}
+
+@media (max-width: 47.99em) {
+  .desktopNav {
+    display: none;
+  }
+}

@@ -1,0 +1,70 @@
+/* === Trigger Buttons === */
+.triggerButton {
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 8px 16px;
+  background-color: transparent;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  color: inherit;
+}
+
+.triggerButton:hover {
+  background-color: var(--mantine-color-gray-1);
+  color: var(--mantine-color-cyan-6);
+}
+
+[data-mantine-color-scheme="dark"] .triggerButton:hover {
+  background-color: var(--mantine-color-dark-4);
+  color: var(--mantine-color-cyan-3);
+}
+
+.triggerActive {
+  color: var(--mantine-color-cyan-6);
+}
+
+/* === Dropdown Items === */
+.linkItem {
+  display: block;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 12px;
+  background-color: transparent;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+  color: inherit;
+}
+
+.linkItem:hover {
+  background-color: var(--mantine-color-gray-1);
+  color: var(--mantine-color-cyan-6);
+}
+
+[data-mantine-color-scheme="dark"] .linkItem:hover {
+  background-color: var(--mantine-color-dark-4);
+  color: var(--mantine-color-cyan-3);
+}
+
+.linkItemActive {
+  color: light-dark(var(--mantine-color-cyan-6), var(--mantine-color-white));
+  border: 2px dotted light-dark(var(--mantine-color-cyan-6), var(--mantine-color-cyan-3));
+  /* disable hover */
+  pointer-events: none;
+}
+
+.linkItemDescription {
+  font-weight: var(--mantine-font-weight-light);
+  font-size: var(--mantine-font-size-sm);
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-5));
+}
+
+/* === Icon Animation === */
+.chevronIcon {
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
