@@ -1,7 +1,7 @@
 {
   "messages": {
     "manifest": {
-      "name": "Marprezd Website"
+      "name": "Site Web de Marprezd"
     },
     "not-found-page": {
       "description": "Veuillez vérifier à nouveau la barre d'adresse de votre navigateur ou utilisez la navigation pour accéder à une page connue.",
@@ -9,7 +9,111 @@
     },
     "error": {
       "description": "<p>Nous avons malheureusement rencontré une erreur.</p><p>Vous pouvez essayer de <retry>recharger la page</retry> que vous visitiez.</p>",
-      "title": "Quelque chose s'est mal passé!"
+      "title": "Quelque chose s'est mal passé !"
+    },
+    "top-nav-bar": {
+      "main-menu": {
+        "home": {
+          "label": "Accueil"
+        },
+        "pages": {
+          "label": "Pages",
+          "items": {
+            "works": {
+              "label": "Réalisations",
+              "description": "Applications web et autres logiciels que j'ai développés."
+            },
+            "resources": {
+              "label": "Ressources",
+              "description": "Une sélection de livres à ne pas manquer."
+            },
+            "hire": {
+              "label": "Embauchez-moi",
+              "description": "Parlons de votre prochain projet logiciel."
+            },
+            "repositories": {
+              "label": "Dépôts GitHub",
+              "description": "Portfolio de projets open source."
+            },
+            "tags": {
+              "label": "Étiquettes",
+              "description": "Collection d'étiquettes."
+            },
+            "categories": {
+              "label": "Catégories",
+              "description": "Collection de catégories."
+            }
+          }
+        },
+        "tutorials": {
+          "label": "Tutoriels",
+          "items": {
+            "courses": {
+              "label": "Formations",
+              "description": "Cours dédiés aux technologies de l'information."
+            },
+            "blog": {
+              "label": "Blog",
+              "description": "Articles techniques pour les ingénieurs en développement logiciel."
+            }
+          }
+        },
+        "communities": {
+          "label": "Communautés",
+          "items": {
+            "guestbook": {
+              "label": "Livre d'or",
+              "description": "Vos retours sont les bienvenus dans notre livre d'or."
+            },
+            "patreon": {
+              "label": "Patreon",
+              "description": "Accès exclusif au contenu réservé aux abonnés."
+            }
+          }
+        }
+      },
+      "action-menu": {
+        "user-menu": {
+          "language": {
+            "label": "Sélectionner la langue"
+          },
+          "theme": {
+            "label": "Sélectionnez le thème",
+            "light": "Clair",
+            "dark": "Sombre",
+            "auto": "Système"
+          }
+        },
+        "search": {
+          "tooltip": {
+            "label": "Rechercher"
+          },
+          "title": "Trouve ce que tu cherches",
+          "label": "Rechercher du contenu",
+          "placeholder": "Entrez des mots-clés, des sujets ou des questions...",
+          "starting": "Recherche en cours...",
+          "no-found": "Aucun article trouvé. Essayez un terme de recherche différent.",
+          "min-chars": "Entrez au moins 3 caractères pour rechercher...",
+          "type-to-search": "Commencez à taper pour rechercher...",
+          "close": "Appuyez sur Échap pour fermer",
+          "move-to-top": "Aller en haut",
+          "move-to-bottom": "Aller en bas",
+          "select": "Sélectionner",
+          "results-count": "{count, plural, one {Trouvé # résultat} other {Trouvés # résultats}}"
+        },
+        "resume": {
+          "label": "CV",
+          "tooltip": {
+            "label": "Télécharger CV"
+          }
+        }
+      }
+    },
+    "blog": {
+      "reading-time": {
+        "label": "Temps estimé de lecture",
+        "mins": "{minutes, plural, one {# min de lecture} other {# mins de lecture}}"
+      }
     }
   }
 }

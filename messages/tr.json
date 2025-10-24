@@ -1,7 +1,7 @@
 {
   "messages": {
     "manifest": {
-      "name": "Marprezd Website"
+      "name": "Marprezd Web Sitesi"
     },
     "not-found-page": {
       "description": "Lütfen tarayıcının adres çubuğunu kontrol edin veya bilinen bir sayfaya gitmek için navigasyonu kullanın.",
@@ -10,6 +10,110 @@
     "error": {
       "description": "<p>Üzgünüm, bir hata oluştu.</p><p>Sayfayı <retry>yeniden yükleyebilirsiniz</retry>.</p>",
       "title": "Bir hata oluştu!"
+    },
+    "top-nav-bar": {
+      "main-menu": {
+        "home": {
+          "label": "Anasayfa"
+        },
+        "pages": {
+          "label": "Sayfalar",
+          "items": {
+            "works": {
+              "label": "Çalışmalarım",
+              "description": "Geliştirdiğim web uygulamaları ve diğer yazılımlar."
+            },
+            "resources": {
+              "label": "Kaynaklar",
+              "description": "Kaçırmamanız gereken mutlaka okunması gereken kitaplar listesi."
+            },
+            "hire": {
+              "label": "Beni İşe Alın",
+              "description": "Bir sonraki yazılım projeniz hakkında konuşalım."
+            },
+            "repositories": {
+              "label": "GitHub Depoları",
+              "description": "Açık kaynak projeler portföy listesi."
+            },
+            "tags": {
+              "label": "Etiketler",
+              "description": "Etiket koleksiyonları."
+            },
+            "categories": {
+              "label": "Kategoriler",
+              "description": "Kategori koleksiyonları."
+            }
+          }
+        },
+        "tutorials": {
+          "label": "Eğitimler",
+          "items": {
+            "courses": {
+              "label": "Kurslar",
+              "description": "Bilgi Teknolojileri ile İlgili Kurslar."
+            },
+            "blog": {
+              "label": "Blog",
+              "description": "Yazılım mühendisleri için teknik makaleler."
+            }
+          }
+        },
+        "communities": {
+          "label": "Topluluklar",
+          "items": {
+            "guestbook": {
+              "label": "Ziyaretçi Defteri",
+              "description": "Ziyaretçi defterimizdeki geri bildirimlerinizi değerlendiriyoruz."
+            },
+            "patreon": {
+              "label": "Patreon",
+              "description": "Sadece aboneler için olan içeriklere erişin."
+            }
+          }
+        }
+      },
+      "action-menu": {
+        "user-menu": {
+          "language": {
+            "label": "Dil Seçimi"
+          },
+          "theme": {
+            "label": "Tema Seçimi",
+            "light": "Açık",
+            "dark": "Koyu",
+            "auto": "Sistem"
+          }
+        },
+        "search": {
+          "tooltip": {
+            "label": "Ara"
+          },
+          "title": "Bir şeyi bul",
+          "label": "İçerik ara",
+          "placeholder": "Anahtar kelimeler, konular veya sorular...",
+          "starting": "Arama Yapılıyor...",
+          "no-found": "Makale bulunamadı. Farklı bir arama terimi deneyin.",
+          "min-chars": "Arama için en az 3 karakter yazın...",
+          "type-to-search": "Arama yapmak için yazmaya başlayın...",
+          "close": "Esc tuşuna basın",
+          "move-to-top": "En Üsteye Taşı",
+          "move-to-bottom": "En Altına Taşı",
+          "select": "Seç",
+          "results-count": "{count, plural, one {# Sonuç bulundu} other {# Sonuç bulundu}}"
+        },
+        "resume": {
+          "label": "Özgeçmiş",
+          "tooltip": {
+            "label": "Özgeçmişi İndir"
+          }
+        }
+      }
+    },
+    "blog": {
+      "reading-time": {
+        "label": "Okuma Süresi",
+        "mins": "{minutes, plural, one {# dk okuma} other {# dk okuma}}"
+      }
     }
   }
 }

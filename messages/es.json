@@ -1,15 +1,118 @@
 {
   "messages": {
     "manifest": {
-      "name": "Marprezd Website"
+      "name": "Sitio Web de Marprezd"
     },
     "not-found-page": {
-      "description": "Por favor, verifique la barra de direcciones del navegador o use la navegación para ir a una página conocida.",
+      "description": "Por favor, verifica la barra de direcciones del navegador o usa la navegación para ir a una página conocida.",
       "title": "Página no encontrada"
     },
     "error": {
       "description": "<p>¡Lamentablemente hemos encontrado un error!</p><p>Puedes intentar <retry>recargar la página</retry> que estabas visitando.</p>",
       "title": "¡Algo salió mal!"
+    },
+    "top-nav-bar": {
+      "main-menu": {
+        "home": {
+          "label": "Inicio"
+        },
+        "pages": {
+          "label": "Páginas",
+          "items": {
+            "works": {
+              "label": "Trabajos",
+              "description": "Aplicaciones web y otros desarrollos de software que he realizado."
+            },
+            "resources": {
+              "label": "Recursos",
+              "description": "Una lista de libros imprescindibles que no deberías perderte."
+            },
+            "hire": {
+              "label": "Contrátame",
+              "description": "Hablemos sobre tu próximo proyecto de software."
+            },
+            "repositories": {
+              "label": "Repositorios en GitHub",
+              "description": "Portafolio de proyectos de código abierto."
+            },
+            "tags": {
+              "label": "Etiquetas",
+              "description": "Colecciones de etiquetas."
+            },
+            "categories": {
+              "label": "Categorías",
+              "description": "Colecciones de categorías."
+            }
+          }
+        },
+        "tutorials": {
+          "label": "Tutoriales",
+          "items": {
+            "courses": {
+              "label": "Cursos",
+              "description": "Cursos relacionados con Tecnologías de la Información."
+            },
+            "blog": {
+              "label": "Blog",
+              "description": "Artículos técnicos para ingenieros de software."
+            }
+          }
+        },
+        "communities": {
+          "label": "Comunidades",
+          "items": {
+            "guestbook": {
+              "label": "Libro de visitas",
+              "description": "Apreciamos tus comentarios en nuestro libro de visitas."
+            },
+            "patreon": {
+              "label": "Patreon",
+              "description": "Acceso a contenido exclusivo para suscriptores."
+            }
+          }
+        }
+      },
+      "action-menu": {
+        "user-menu": {
+          "language": {
+            "label": "Seleccionar idioma"
+          },
+          "theme": {
+            "label": "Seleccionar tema",
+            "light": "Claro",
+            "dark": "Oscuro",
+            "auto": "Sistema"
+          }
+        },
+        "search": {
+          "tooltip": {
+            "label": "Buscar"
+          },
+          "title": "Busca lo que necesites.",
+          "label": "Buscar contenido",
+          "placeholder": "Escribe palabras clave, temas o preguntas...",
+          "starting": "Buscando...",
+          "no-found": "No se encontraron artículos. Intenta con un término de búsqueda diferente.",
+          "min-chars": "Escribe al menos 3 caracteres para buscar...",
+          "type-to-search": "Comienza a escribir para buscar...",
+          "close": "Presiona Esc para cerrar",
+          "move-to-top": "Mover al inicio",
+          "move-to-bottom": "Mover al final",
+          "select": "Seleccionar",
+          "results-count": "{count, plural, one {Encontrado # resultado} other {Encontrados # resultados}}"
+        },
+        "resume": {
+          "tooltip": {
+            "label": "Descargar currículum"
+          }
+        }
+      }
+    },
+    "blog": {
+      "reading-time": {
+        "label": "Tiempo estimado de lectura",
+        "mins": "{minutes, plural, one {# min de lectura} other {# mins de lectura}}"
+      }
     }
   }
 }

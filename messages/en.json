@@ -10,6 +10,110 @@
     "error": {
       "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>",
       "title": "Something went wrong!"
+    },
+    "top-nav-bar": {
+      "main-menu": {
+        "home": {
+          "label": "Home"
+        },
+        "pages": {
+          "label": "Pages",
+          "items": {
+            "works": {
+              "label": "Works",
+              "description": "Web applications and other software I have developed."
+            },
+            "resources": {
+              "label": "Resources",
+              "description": "A list of must-read books you shouldn’t miss."
+            },
+            "hire": {
+              "label": "Hire me",
+              "description": "Let's talk about your next software project."
+            },
+            "repositories": {
+              "label": "Github Repositories",
+              "description": "Open source projects portfolio list."
+            },
+            "tags": {
+              "label": "Tags",
+              "description": "Colections of tags."
+            },
+            "categories": {
+              "label": "Categories",
+              "description": "Colections of categories."
+            }
+          }
+        },
+        "tutorials": {
+          "label": "Tutorials",
+          "items": {
+            "courses": {
+              "label": "Courses",
+              "description": "Information Technology-Related Courses."
+            },
+            "blog": {
+              "label": "Blog",
+              "description": "Technician articles for software engineers."
+            }
+          }
+        },
+        "communities": {
+          "label": "Communities",
+          "items": {
+            "guestbook": {
+              "label": "Guest book",
+              "description": "We appreciate your feedback in our guestbook."
+            },
+            "patreon": {
+              "label": "Patreon",
+              "description": "Access content that is available only to subscribers."
+            }
+          }
+        }
+      },
+      "action-menu": {
+        "user-menu": {
+          "language": {
+            "label": "Select language"
+          },
+          "theme": {
+            "label": "Select theme",
+            "light": "Light",
+            "dark": "Dark",
+            "auto": "System"
+          }
+        },
+        "search": {
+          "tooltip": {
+            "label": "Search"
+          },
+          "title": "Find what you need",
+          "label": "Search content",
+          "placeholder": "Type keywords, topics, or questions...",
+          "starting": "Searching...",
+          "no-found": "No articles found. Try a different search term.",
+          "min-chars": "Type at least 3 characters to search...",
+          "type-to-search": "Start typing to search...",
+          "close": "Press Esc to close",
+          "move-to-top": "Move to top",
+          "move-to-bottom": "Move to bottom",
+          "select": "Select",
+          "results-count": "{count, plural, one {Found # result} other {Found # results}}"
+        },
+        "resume": {
+          "label": "Resume",
+          "tooltip": {
+            "label": "Download resume"
+          }
+        }
+      }
+    },
+    "blog": {
+      "reading-time": {
+        "label": "Estimated reading time",
+        "mins": "{minutes, plural, one {# min to read} other {# mins to read}}"
+      }
     }
   }
 }
