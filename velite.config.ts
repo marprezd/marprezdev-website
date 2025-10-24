@@ -1,20 +1,7 @@
-import { exec } from "node:child_process"
-import { promisify } from "node:util"
 // velite config
 import { defineCollection, defineConfig, s } from "velite"
 
-const execAsync = promisify(exec)
-
 const count = s.object({ total: s.number(), articles: s.number() }).default({ total: 0, articles: 0 })
-
-function timestamp() {
-  return s
-    .custom<string | undefined>(i => i === undefined || typeof i === "string")
-    .transform<string>(async (value, { meta }) => {
-      const { stdout } = await execAsync(`git log -1 --format=%cd ${meta.path}`)
-      return new Date(stdout || Date.now()).toISOString()
-    })
-}
 
 const meta = s.object({
   title: s.string().optional(),
@@ -43,7 +30,7 @@ const posts = defineCollection({
     title: s.string(),
     slug: s.path(),
     date: s.isodate(),
-    lastModified: timestamp(),
+    lastModified: s.isodate().optional(),
     cover: image.optional(),
     video: s.string().optional(),
     tags: s.array(s.string()).default([]),
