@@ -1,8 +1,16 @@
 // src/app/[locale]/layout.tsx
+import {
+  AppShell,
+  AppShellFooter,
+  AppShellHeader,
+  AppShellMain,
+  rem,
+} from "@mantine/core"
 import { hasLocale } from "next-intl"
 import { setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 import BaseLayout from "@/components/BaseLayout"
+import TopNavBar from "@/components/organisms/TopNavBar"
 import { routing } from "@/i18n/routing"
 
 export default async function LocaleLayout({
@@ -24,7 +32,24 @@ export default async function LocaleLayout({
 
   return (
     <BaseLayout locale={locale}>
-      {children}
+      <AppShell
+        padding="md"
+        header={{ height: 60 }}
+        transitionDuration={500}
+        transitionTimingFunction="ease"
+      >
+        <AppShellHeader>
+          <TopNavBar />
+        </AppShellHeader>
+        <AppShellMain
+          pt={`calc(${rem(60)} + var(--mantine-spacing-md))`}
+        >
+          {children}
+        </AppShellMain>
+        <AppShellFooter>
+          <div>Footer</div>
+        </AppShellFooter>
+      </AppShell>
     </BaseLayout>
   )
 }
