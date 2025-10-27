@@ -109,6 +109,102 @@
         }
       }
     },
+    "home": {
+      "hero": {
+        "badge": "À propos de moi",
+        "title": "<h1>Bonjour, <span>je suis Mario</span>, bienvenue sur mon site personnel.</h1>",
+        "description": "Un site où je présente mes projets et partage mon savoir-faire en développement logiciel avec Python, Next.js et d'autres technologies.",
+        "started": "Commencer"
+      },
+      "profile": {
+        "description": "Je suis un développeur logiciel autodidacte spécialisé en science des données. Passionné par l'apprentissage et le partage de connaissances, j'aime développer des applications web et explorer de nouvelles technologies.",
+        "experience": "{years} ans d'expérience"
+      },
+      "skills": {
+        "title": "Compétences techniques et transversales",
+        "description": "Compétences qui mettent en valeur mes capacités professionnelles.",
+        "average": "Moyenne :"
+      },
+      "soft-skills": {
+        "communication": "Communication",
+        "teamwork": "Travail d'équipe",
+        "problem-solving": "Résolution de problèmes",
+        "adaptability": "Adaptabilité",
+        "time-management": "Gestion du temps",
+        "critical-thinking": "Esprit critique",
+        "self-motivation": "Auto-motivation",
+        "professional-ethics": "Éthique professionnelle",
+        "empathy": "Empathie",
+        "proactivity": "Proactivité"
+      },
+      "metrics": {
+        "title": "Tableau de bord statistique",
+        "description": "Quelques métriques concernant mes activités de programmation.",
+        "charts": {
+          "refresh": "Rafraîchir",
+          "error": "Les données n'ont pas pu être chargées. Veuillez réessayer plus tard.",
+          "global-code-average": {
+            "hr": "heures",
+            "min": "minutes"
+          },
+          "githubContributions": {
+            "title": "Contributions GitHub",
+            "subtitle": "Contributions effectuées au cours de la dernière année."
+          },
+          "githubStats": {
+            "title": "Statistiques GitHub",
+            "subtitle": "Pull requests, problèmes, dépôts...",
+            "stars": "Étoiles reçues",
+            "commitments": "Commentaires de commit",
+            "prs": "Pull requests",
+            "issues": "Problèmes",
+            "contributions": "Contributions",
+            "total-repos": "Dépôts",
+            "total-followers": "Abonnés"
+          },
+          "programming-languages": {
+            "title": "Langages de programmation",
+            "subtitle": "Les langages de programmation les plus utilisés.",
+            "hr": "h",
+            "min": "min"
+          },
+          "categories-tracking": {
+            "title": "Débogage et codage",
+            "subtitle": "Statistiques de débogage et de codage.",
+            "hr": "h",
+            "min": "min"
+          },
+          "best-days": {
+            "title": "Programmation par jour",
+            "subtitle": "Les meilleurs jours de programmation de la semaine dernière.",
+            "label": "Total"
+          },
+          "best-days-avgs": {
+            "cumulative-total": {
+              "title": "Programmation par an",
+              "desc": "Heures totales de programmation par an."
+            },
+            "difference-48hrs": {
+              "title": "Différence en pourcentage",
+              "desc": "Différences de programmation et pourcentages des 48 dernières heures.",
+              "min": "min"
+            },
+            "daily-average": {
+              "title": "Programmation quotidienne",
+              "desc": "Moyenne quotidienne d'heures de programmation."
+            },
+            "code-editors": {
+              "title": "Éditeurs de code et IDE",
+              "desc": "Les éditeurs de code les plus utilisés par heure."
+            },
+            "operating-systems": {
+              "title": "Systèmes d'exploitation",
+              "desc": "Les systèmes d'exploitation les plus utilisés par heure."
+            }
+          }
+        }
+      }
+    },
     "blog": {
       "reading-time": {
         "label": "Temps estimé de lecture",

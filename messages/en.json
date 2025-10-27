@@ -109,6 +109,102 @@
         }
       }
     },
+    "home": {
+      "hero": {
+        "badge": "About me",
+        "title": "<h1>Hi, <span>I am Mario</span>, welcome to my personal website.</h1>",
+        "description": "A website where I showcase my projects and teach others how to build software using Python, Next.js, and other technologies.",
+        "started": "Get started"
+      },
+      "profile": {
+        "description": "I am a self-taught software developer with a focus on data science. I have a passion for learning and sharing knowledge with others. I enjoy building web applications and exploring new technologies.",
+        "experience": "{years} years of experience"
+      },
+      "skills": {
+        "title": "Soft and hard skills",
+        "description": "Skills that highlight my professional capabilities.",
+        "average": "Average:"
+      },
+      "soft-skills": {
+        "communication": "Communication",
+        "teamwork": "Teamwork",
+        "problem-solving": "Problem Solving",
+        "adaptability": "Adaptability",
+        "time-management": "Time Management",
+        "critical-thinking": "Critical Thinking",
+        "self-motivation": "Self Motivation",
+        "professional-ethics": "Professional ethics",
+        "empathy": "Empathy",
+        "proactivity": "Proactivity"
+      },
+      "metrics": {
+        "title": "Statistics Dashboard",
+        "description": "Some metrics regarding my programming activities.",
+        "charts": {
+          "refresh": "Refresh",
+          "error": "The data could not be loaded successfully. Please try again later.",
+          "global-code-average": {
+            "hr": "hours",
+            "min": "minutes"
+          },
+          "githubContributions": {
+            "title": "GitHub contributions",
+            "subtitle": "Contributions made in the past year."
+          },
+          "githubStats": {
+            "title": "Github Stats",
+            "subtitle": "Pull requests,  issues, repositories...",
+            "stars": "Stars received",
+            "commitments": "Commit comments",
+            "prs": "Pull requests",
+            "issues": "Issues",
+            "contributions": "Contributions",
+            "total-repos": "Repositories",
+            "total-followers": "Followers"
+          },
+          "programming-languages": {
+            "title": "Programming languages",
+            "subtitle": "The most commonly used programming languages.",
+            "hr": "hrs",
+            "min": "mins"
+          },
+          "categories-tracking": {
+            "title": "Debugging and coding",
+            "subtitle": "Statistics of debugging and coding.",
+            "hr": "hrs",
+            "min": "mins"
+          },
+          "best-days": {
+            "title": "Programming per day",
+            "subtitle": "The best programming days of the past week.",
+            "label": "Total"
+          },
+          "best-days-avgs": {
+            "cumulative-total": {
+              "title": "Programming per year",
+              "desc": "Total programming hours per year."
+            },
+            "difference-48hrs": {
+              "title": "Percentage difference",
+              "desc": "Programming and percentage differences in the last 48 hours.",
+              "min": "mins"
+            },
+            "daily-average": {
+              "title": "Daily programming",
+              "desc": "Average daily programming hours."
+            },
+            "code-editors": {
+              "title": "Code editors and IDE",
+              "desc": "The most frequently used code editors per hour."
+            },
+            "operating-systems": {
+              "title": "Operating systems",
+              "desc": "The most frequently used operating systems per hour."
+            }
+          }
+        }
+      }
+    },
     "blog": {
       "reading-time": {
         "label": "Estimated reading time",
