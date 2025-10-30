@@ -1,0 +1,15 @@
+db:
+  dialect: sqlite3
+  name: /wakapi/data/wakapi.db
+
+security:
+  insecure_cookies: true
+  allow_signup: true
+  password_salt: $(openssl rand -hex 16)
+
+server:
+  listen_port: 3000
+  listen_address: 0.0.0.0
+  # Public URL where Wakapi will be reachable (used to build links and callbacks).
+  # In production we expose Wakapi on the subdomain proxied by Cloudflare.
+  base_url: "https://wakapi.marprezd.dev/api"
