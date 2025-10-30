@@ -10,9 +10,13 @@
     "lint:fix": "eslint --fix",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
+    "backup:build": "tsc -p scripts/tsconfig.json",
+    "backup:run": "node scripts/dist/backup/backup-wakapi.js",
+    "backup": "pnpm run backup:build && pnpm run backup:run"
   },
   "dependencies": {
+    "@mantine/charts": "^8.3.5",
     "@mantine/core": "^8.3.5",
     "@mantine/hooks": "^8.3.5",
     "@opennextjs/cloudflare": "^1.11.0",
@@ -23,7 +27,9 @@
     "next-cloudinary": "^6.16.2",
     "next-intl": "^4.4.0",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "recharts": "^3.3.0",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.0.0",
