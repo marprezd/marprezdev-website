@@ -1,0 +1,57 @@
+name: Backup Wakapi (endpoint export)
+
+on:
+  schedule:
+    # Run daily at 02:00 UTC
+    - cron: "0 2 * * *"
+  workflow_dispatch: {}
+
+concurrency:
+  group: backup-wakapi
+  cancel-in-progress: false
+
+jobs:
+  export-endpoints:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
+
+      - name: Run endpoint-export backup
+        if: ${{ github.event_name != 'pull_request' }}
+        env:
+          WAKAPI_BASE_URL: ${{ secrets.WAKAPI_BASE_URL }}
+          WAKAPI_API_KEY: ${{ secrets.WAKAPI_API_KEY }}
+          NEXT_BASE_URL: ${{ secrets.NEXT_BASE_URL }}
+        run: |
+          # Diagnostic health check (non-fatal)
+          if [ -n "$WAKAPI_BASE_URL" ]; then
+            echo "Checking $WAKAPI_BASE_URL/health"
+            curl -fsS -o /dev/null -w "HTTP %{http_code}\n" "$WAKAPI_BASE_URL/health" || echo "health check failed (non-fatal)"
+          else
+            echo "WAKAPI_BASE_URL not set; the job will attempt fallback endpoints if configured."
+          fi
+
+          # the compiled script uses only built-in Node APIs (global fetch, fs, path)
+          node --version
+          node scripts/dist/backup/export-wakapi-endpoints.js
+
+      - name: List backups produced
+        run: |
+          echo "Backups dir: $(pwd)/wakapi/backups"
+          ls -l wakapi/backups || echo "No backups found"
+
+      - name: Upload backups as artifact (7-day retention)
+        uses: actions/upload-artifact@v3
+        with:
+          name: wakapi-endpoint-backups
+          path: wakapi/backups/
+          retention-days: 7
