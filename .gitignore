@@ -52,3 +52,7 @@ next-env.d.ts
 
 # velite
 .velite/
+
+# wakapi
+wakapi/*
+!wakapi/backups/
