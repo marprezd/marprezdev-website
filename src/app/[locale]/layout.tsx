@@ -43,6 +43,7 @@ export default async function LocaleLayout({
         </AppShellHeader>
         <AppShellMain
           pt={`calc(${rem(60)} + var(--mantine-spacing-md))`}
+          px="0"
         >
           {children}
         </AppShellMain>
