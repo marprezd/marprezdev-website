@@ -3,6 +3,13 @@
     "manifest": {
       "name": "Marprezd Website"
     },
+    "metadata": {
+      "homepage": {
+        "title": "Marprezd | APIs, Data Science and Technical Tutorials",
+        "description": "Explore Marprezd’s projects and tutorials. Learn to build software with Python, Next.js, and more — from scratch and with best practices.",
+        "generator": "Mario Pérez's Personal Website"
+      }
+    },
     "not-found-page": {
       "description": "Please double-check the browser address bar or use the navigation to go to a known page.",
       "title": "Page not found"
@@ -111,31 +118,59 @@
     },
     "home": {
       "hero": {
-        "badge": "About me",
-        "title": "<h1>Hi, <span>I am Mario</span>, welcome to my personal website.</h1>",
-        "description": "A website where I showcase my projects and teach others how to build software using Python, Next.js, and other technologies.",
+        "title": "<h1>Welcome! <span>I'm Mario</span>, a software developer with skills in creating on-demand web applications</h1>",
+        "description": "On this site, I share my projects and teach others how to build scalable, real-world software using Python, Next.js, and more.",
         "started": "Get started"
       },
       "profile": {
-        "description": "I am a self-taught software developer with a focus on data science. I have a passion for learning and sharing knowledge with others. I enjoy building web applications and exploring new technologies.",
-        "experience": "{years} years of experience"
+        "title": "About me",
+        "description": "I am a full-stack software developer based in Colombia who has skills in building web applications.  I am enthusiastic about learning, sharing knowledge, and creating apps and user interfaces that address real-world challenges with cutting-edge technologies such as Python, JavaScript (React, NextJS), and Java, among others.",
+        "experience": "{years} years of experience",
+        "profession": "Full-Stack Software Developer",
+        "hire-me": "Hire me"
       },
       "skills": {
-        "title": "Soft and hard skills",
+        "title": "Skills profile",
         "description": "Skills that highlight my professional capabilities.",
-        "average": "Average:"
-      },
-      "soft-skills": {
-        "communication": "Communication",
-        "teamwork": "Teamwork",
-        "problem-solving": "Problem Solving",
-        "adaptability": "Adaptability",
-        "time-management": "Time Management",
-        "critical-thinking": "Critical Thinking",
-        "self-motivation": "Self Motivation",
-        "professional-ethics": "Professional ethics",
-        "empathy": "Empathy",
-        "proactivity": "Proactivity"
+        "average": "Average:",
+        "items": {
+          "communication": {
+            "title": "Communication"
+          },
+          "teamwork": {
+            "title": "Teamwork"
+          },
+          "problem-solving": {
+            "title": "Problem Solving"
+          },
+          "adaptability": {
+            "title": "Adaptability"
+          },
+          "time-management": {
+            "title": "Time Management"
+          },
+          "critical-thinking": {
+            "title": "Critical Thinking"
+          },
+          "self-motivation": {
+            "title": "Self Motivation"
+          },
+          "professional-ethics": {
+            "title": "Ethics"
+          },
+          "empathy": {
+            "title": "Empathy"
+          },
+          "proactivity": {
+            "title": "Proactivity"
+          }
+        },
+        "categories": {
+          "languages": "Languages",
+          "frameworks": "Frameworks",
+          "tools": "Tools",
+          "databases": "Databases"
+        }
       },
       "metrics": {
         "title": "Statistics Dashboard",

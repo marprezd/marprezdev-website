@@ -3,6 +3,13 @@
     "manifest": {
       "name": "Marprezd Web Sitesi"
     },
+    "metadata": {
+      "homepage": {
+        "title": "Marprezd | API'ler, Veri Bilimi ve Teknik Eğitimler",
+        "description": "Marprezd’nin projelerini keşfedin. Python, Next.js ve daha fazlasıyla yazılım geliştirmeyi öğrenin — sıfırdan ve en iyi uygulamalarla.",
+        "generator": "Mario Pérez'in Kişisel Web Sitesi"
+      }
+    },
     "not-found-page": {
       "description": "Lütfen tarayıcının adres çubuğunu kontrol edin veya bilinen bir sayfaya gitmek için navigasyonu kullanın.",
       "title": "Sayfa bulunamadı"
@@ -112,30 +119,59 @@
     "home": {
       "hero": {
         "badge": "Hakkımda",
-        "title": "<h1>Merhaba, <span>ben Mario</span>, kişisel web siteme hoş geldiniz.</h1>",
-        "description": "Projelerimi sergilediğim ve diğerlerine Python, Next.js ve diğer teknolojileri kullanarak yazılım geliştirmeyi öğrettiğim bir web sitesi.",
+        "title": "<h1>Hoş geldiniz! <span>ben Mario</span>, isteğe bağlı web uygulamaları oluşturma becerisine sahip bir yazılım geliştiricisiyim</h1>",
+        "description": "Bu sitede projelerimi paylaşıyor ve Python, Next.js gibi araçlarla ölçeklenebilir yazılımlar geliştirmeyi öğretiyorum.",
         "started": "Başla"
       },
       "profile": {
-        "description": "Veri bilimi odaklı, kendi kendini yetiştirmiş bir yazılım geliştiriciyim. Öğrenmeye ve bilgi paylaşmaya tutkulu biriyim. Web uygulamaları geliştirmekten ve yeni teknolojileri keşfetmekten keyif alıyorum.",
-        "experience": "{years} yıllık deneyim"
+        "title": "Hakkımda",
+        "description": "Kolombiya'da yaşayan ve web uygulamaları geliştirme konusunda yetenekli bir tam yığın yazılım geliştiricisiyim. Python, JavaScript (React, NextJS) ve Java gibi en son teknolojilerle gerçek dünyadaki zorlukları ele alan uygulamalar ve kullanıcı arayüzleri geliştirmek, öğrenmek ve bilgi paylaşmak konusunda hevesliyim.",
+        "experience": "{years} yıllık deneyim",
+        "profession": "Tam Yığın Yazılım Geliştiricisi",
+        "hire-me": "Beni İşe Alın"
       },
       "skills": {
-        "title": "Yumuşak ve Sert Beceriler",
+        "title": "Beceri Profili",
         "description": "Profesyonel yeteneklerimi öne çıkaran beceriler.",
-        "average": "Ortalama:"
-      },
-      "soft-skills": {
-        "communication": "İletişim",
-        "teamwork": "Takım Çalışması",
-        "problem-solving": "Problem Çözme",
-        "adaptability": "Uyum Sağlama",
-        "time-management": "Zaman Yönetimi",
-        "critical-thinking": "Eleştirel Düşünme",
-        "self-motivation": "Öz Motivasyon",
-        "professional-ethics": "Mesleki Etik",
-        "empathy": "Empati",
-        "proactivity": "Girişkenlik"
+        "average": "Ortalama:",
+        "items": {
+          "communication": {
+            "title": "İletişim"
+          },
+          "teamwork": {
+            "title": "Takım Çalışması"
+          },
+          "problem-solving": {
+            "title": "Problem Çözme"
+          },
+          "adaptability": {
+            "title": "Uyum Sağlama"
+          },
+          "time-management": {
+            "title": "Zaman Yönetimi"
+          },
+          "critical-thinking": {
+            "title": "Eleştirel Düşünme"
+          },
+          "self-motivation": {
+            "title": "Öz Motivasyon"
+          },
+          "professional-ethics": {
+            "title": "Etik"
+          },
+          "empathy": {
+            "title": "Empati"
+          },
+          "proactivity": {
+            "title": "Girişkenlik"
+          }
+        },
+        "categories": {
+          "languages": "Diller",
+          "frameworks": "Frameworks",
+          "tools": "Araçlar",
+          "databases": "Veritabanları"
+        }
       },
       "metrics": {
         "title": "İstatistik Panosu",

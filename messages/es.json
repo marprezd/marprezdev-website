@@ -3,6 +3,13 @@
     "manifest": {
       "name": "Sitio Web de Marprezd"
     },
+    "metadata": {
+      "homepage": {
+        "title": "Marprezd | APIs, Ciencia de Datos y Tutoriales Técnicos",
+        "description": "Descubre proyectos y artículos sobre Python, Next.js, APIs e IA Generativa. Aprende a crear aplicaciones web modernas, seguras y escalables.",
+        "generator": "Sitio web personal de Mario Pérez"
+      }
+    },
     "not-found-page": {
       "description": "Por favor, verifica la barra de direcciones del navegador o usa la navegación para ir a una página conocida.",
       "title": "Página no encontrada"
@@ -111,30 +118,59 @@
     "home": {
       "hero": {
         "badge": "Sobre mí",
-        "title": "<h1>Hola, <span>soy Mario</span>, bienvenido a mi sitio web personal.</h1>",
-        "description": "Un sitio web donde muestro mis proyectos y enseño a otros cómo crear software usando Python, Next.js y otras tecnologías.",
+        "title": "<h1>¡Bienvenido! <span>soy Mario</span>, un desarrollador de software con experiencia en la creación de aplicaciones web bajo demanda</h1>",
+        "description": "En este sitio comparto mis proyectos y enseño cómo crear software escalable con Python, Next.js y más.",
         "started": "Comenzar"
       },
       "profile": {
-        "description": "Soy un desarrollador de software autodidacta con enfoque en ciencia de datos. Tengo una gran pasión por aprender y compartir conocimientos con los demás. Disfruto creando aplicaciones web y explorando nuevas tecnologías.",
-        "experience": "{years} años de experiencia"
+        "title": "Sobre mí",
+        "description": "Soy un desarrollador de software full-stack radicado en Colombia, con experiencia en la creación de aplicaciones web. Me apasiona aprender, compartir conocimientos y crear aplicaciones e interfaces de usuario que resuelvan desafíos del mundo real con tecnologías de vanguardia como Python, JavaScript (React, NextJS) y Java, entre otras.",
+        "experience": "{years} años de experiencia",
+        "profession": "Full-Stack Software Developer",
+        "hire-me": "Contrátame"
       },
       "skills": {
-        "title": "Habilidades blandas y técnicas",
+        "title": "Perfil de habilidades",
         "description": "Habilidades que destacan mis capacidades profesionales.",
-        "average": "Promedio:"
-      },
-      "soft-skills": {
-        "communication": "Comunicación",
-        "teamwork": "Trabajo en equipo",
-        "problem-solving": "Resolución de problemas",
-        "adaptability": "Adaptabilidad",
-        "time-management": "Gestión del tiempo",
-        "critical-thinking": "Pensamiento crítico",
-        "self-motivation": "Automotivación",
-        "professional-ethics": "Ética profesional",
-        "empathy": "Empatía",
-        "proactivity": "Proactividad"
+        "average": "Promedio:",
+        "items": {
+          "communication": {
+            "title": "Comunicación"
+          },
+          "teamwork": {
+            "title": "Trabajo en equipo"
+          },
+          "problem-solving": {
+            "title": "Resolución de problemas"
+          },
+          "adaptability": {
+            "title": "Adaptabilidad"
+          },
+          "time-management": {
+            "title": "Gestión del tiempo"
+          },
+          "critical-thinking": {
+            "title": "Pensamiento crítico"
+          },
+          "self-motivation": {
+            "title": "Automotivación"
+          },
+          "professional-ethics": {
+            "title": "Ética"
+          },
+          "empathy": {
+            "title": "Empatía"
+          },
+          "proactivity": {
+            "title": "Proactividad"
+          }
+        },
+        "categories": {
+          "languages": "Lenguajes",
+          "frameworks": "Frameworks",
+          "tools": "Herramientas",
+          "databases": "Bases de datos"
+        }
       },
       "metrics": {
         "title": "Panel de estadísticas",
