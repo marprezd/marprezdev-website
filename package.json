@@ -16,31 +16,31 @@
     "backup": "pnpm run backup:build && pnpm run backup:run"
   },
   "dependencies": {
-    "@mantine/charts": "^8.3.6",
-    "@mantine/core": "^8.3.6",
-    "@mantine/hooks": "^8.3.6",
-    "@opennextjs/cloudflare": "^1.11.0",
+    "@mantine/charts": "^8.3.7",
+    "@mantine/core": "^8.3.7",
+    "@mantine/hooks": "^8.3.7",
+    "@opennextjs/cloudflare": "^1.11.1",
     "@tabler/icons-react": "^3.35.0",
     "feed": "^5.1.0",
     "fuse.js": "^7.1.0",
     "motion": "^12.23.24",
     "next": "15.5.6",
-    "next-cloudinary": "^6.17.0",
-    "next-intl": "^4.4.0",
+    "next-cloudinary": "^6.17.4",
+    "next-intl": "^4.5.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "recharts": "^3.3.0",
+    "recharts": "^3.4.1",
     "sqlite3": "^5.1.7",
     "swr": "^2.3.6"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.2.0",
-    "@eslint-react/eslint-plugin": "^2.2.4",
+    "@eslint-react/eslint-plugin": "^2.3.4",
     "@eslint/eslintrc": "^3.3.1",
     "@types/node": "^20.19.24",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "eslint": "^9.39.0",
+    "eslint": "^9.39.1",
     "eslint-config-next": "15.5.6",
     "eslint-plugin-format": "^1.0.2",
     "postcss": "^8.5.6",
@@ -48,10 +48,11 @@
     "postcss-simple-vars": "^7.0.1",
     "typescript": "^5.9.3",
     "velite": "^0.3.0",
-    "wrangler": "^4.45.3"
+    "wrangler": "^4.46.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "@swc/core",
       "esbuild",
       "rclone.js",
       "sharp",
