@@ -161,6 +161,7 @@ export default function TopNavBar() {
           opened={drawerOpened}
           onClick={toggleDrawer}
           hiddenFrom="sm"
+          aria-label="Menu Navigation"
         />
       </Group>
       <Drawer
