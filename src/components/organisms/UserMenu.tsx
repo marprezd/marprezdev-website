@@ -123,6 +123,8 @@ export default function UserMenu() {
             radius="lg"
             size="md"
             color="cyan"
+            aria-label="User Menu"
+            role="button"
           >
             <IconAdjustments style={{ width: "70%", height: "70%" }} />
           </ThemeIcon>
