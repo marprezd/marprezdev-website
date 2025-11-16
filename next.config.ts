@@ -1,7 +1,10 @@
 import type { NextConfig } from "next"
 import process from "node:process"
 import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare"
+import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin"
 import createNextIntlPlugin from "next-intl/plugin"
+
+const withVanillaExtract = createVanillaExtractPlugin()
 
 // add velite config
 const isDev = process.argv.includes("dev")
@@ -97,5 +100,5 @@ const nextConfig: NextConfig = {
 }
 
 const withNextIntl = createNextIntlPlugin()
-export default withNextIntl(nextConfig)
+export default withNextIntl(withVanillaExtract(nextConfig))
 initOpenNextCloudflareForDev()

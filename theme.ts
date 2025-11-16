@@ -2,6 +2,7 @@
 "use client"
 
 import { createTheme } from "@mantine/core"
+import { themeToVars } from "@mantine/vanilla-extract"
 
 // Theme configuration
 export const theme = createTheme({
@@ -39,3 +40,5 @@ export const theme = createTheme({
     ],
   },
 })
+
+export const themeVars = themeToVars(theme)
