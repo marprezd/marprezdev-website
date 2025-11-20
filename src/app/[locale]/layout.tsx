@@ -1,7 +1,6 @@
 // src/app/[locale]/layout.tsx
 import {
   AppShell,
-  AppShellFooter,
   AppShellHeader,
   AppShellMain,
   rem,
@@ -10,7 +9,7 @@ import { hasLocale } from "next-intl"
 import { setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 import BaseLayout from "@/components/BaseLayout"
-import TopNavBar from "@/components/organisms/TopNavBar"
+import TopNavBar from "@/components/organisms/TopNavBar/TopNavBar"
 import { routing } from "@/i18n/routing"
 
 export default async function LocaleLayout({
@@ -47,9 +46,6 @@ export default async function LocaleLayout({
         >
           {children}
         </AppShellMain>
-        <AppShellFooter>
-          <div>Footer</div>
-        </AppShellFooter>
       </AppShell>
     </BaseLayout>
   )

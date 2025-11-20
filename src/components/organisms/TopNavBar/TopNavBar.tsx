@@ -1,7 +1,14 @@
 // src/components/organisms/TopNavBar.tsx
 "use client"
 
-import { Box, Burger, Drawer, Flex, Group, ScrollArea } from "@mantine/core"
+import {
+  Box,
+  Burger,
+  Drawer,
+  Flex,
+  Group,
+  ScrollArea,
+} from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
 import {
   IconApps,
@@ -16,12 +23,12 @@ import {
   IconVideo,
 } from "@tabler/icons-react"
 import { useTranslations } from "next-intl"
-import Logo from "../atoms/Logo"
-import CurriculumVitae from "../molecules/CurriculumVitae"
-import { DesktopLinks } from "../molecules/DesktopLinks"
-import Search from "./Search"
-import styles from "./TopNavBar.module.css"
-import UserMenu from "./UserMenu"
+import Logo from "@/components/atoms/Logo"
+import CurriculumVitae from "@/components/molecules/CurriculumVitae"
+import { DesktopLinks } from "@/components/molecules/DesktopLinks"
+import Search from "@/components/organisms/Search"
+import UserMenu from "@/components/organisms/UserMenu"
+import * as styles from "./TopNavBar.css"
 
 /*
  * TopNavBar Component
@@ -146,12 +153,22 @@ export default function TopNavBar() {
     <Box className={styles.navContainer}>
       <Group className={styles.navGroup}>
         <Logo />
-        <Flex className={styles.desktopNav} component="nav">
+        <Flex
+          className={styles.desktopNav}
+          component="nav"
+        >
           {megamenuLinks.map(item => (
             <DesktopLinks key={item.label} item={item} />
           ))}
         </Flex>
-        <Flex className={styles.actionsContainer}>
+        <Flex
+          className={styles.actionsContainer}
+          style={{
+            background: `light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-9))`,
+            borderRadius: "var(--mantine-radius-xl)",
+            border: `1px solid light-dark(var(--mantine-color-gray-4), var(--mantine-color-dark-4))`,
+          }}
+        >
           <UserMenu />
           <Search />
           <CurriculumVitae />
