@@ -3,9 +3,8 @@ import type { Locale } from "next-intl"
 import { Box } from "@mantine/core"
 import { getTranslations, setRequestLocale } from "next-intl/server"
 import { use } from "react"
-import Hero from "@/components/organisms/Hero"
-import ProfileCard from "@/components/organisms/ProfileCard"
-import Skills from "@/components/organisms/skills/index"
+import About from "@/components/organisms/About/About"
+import Hero from "@/components/organisms/Hero/Hero"
 import { host } from "@/utils/hostConfig"
 
 export async function generateMetadata({ params}: { params: Promise<{ locale: Locale }> }) {
@@ -72,8 +71,7 @@ export default function IndexPage({ params }: { params: Promise<{ locale: string
   return (
     <Box>
       <Hero />
-      <ProfileCard />
-      <Skills />
+      <About />
     </Box>
   )
 }
