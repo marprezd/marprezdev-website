@@ -130,8 +130,8 @@
         "hire-me": "Hire me"
       },
       "skills": {
-        "title": "Skills profile",
-        "description": "Skills that highlight my professional capabilities.",
+        "title": "Soft skills and technical skills",
+        "description": "I combine strong soft skills with technical expertise to deliver high-quality solutions.",
         "average": "Average:",
         "items": {
           "communication": {

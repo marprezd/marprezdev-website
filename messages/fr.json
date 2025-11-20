@@ -131,8 +131,8 @@
         "hire-me": "Embauchez-moi"
       },
       "skills": {
-        "title": "Profil de compétences",
-        "description": "Compétences qui mettent en valeur mes capacités professionnelles.",
+        "title": "Compétences interpersonnelles et techniques",
+        "description": "Je combine des compétences interpersonnelles solides avec une expertise technique pour offrir des solutions de haute qualité.",
         "average": "Moyenne:",
         "items": {
           "communication": {
