@@ -1,18 +1,16 @@
-// src/components/organisms/skills/index.tsx
+// src/components/organisms/About/Skills.tsx
 "use client"
 
 import type { JSX } from "react"
 import {
   Box,
-  Container,
   Grid,
-  Group,
-  Space,
   Text,
   Title,
 } from "@mantine/core"
 import { IconDatabase, IconLanguage, IconSourceCode, IconTools } from "@tabler/icons-react"
 import { useTranslations } from "next-intl"
+import CloudImage from "@/components/atoms/CloudImage"
 import {
   IconBrandAnaconda,
   IconBrandCpp,
@@ -107,66 +105,72 @@ export default function Skills(): JSX.Element {
   ]
 
   return (
-    <Container
-      size="md"
-      py="xl"
-    >
-      <Grid>
-        <Grid.Col span={{ base: 12 }}>
-          <Group justify="space-between">
-            <Box>
-              <Title
-                order={2}
-                fz={{ base: "h3", md: "h2", lg: "h1" }}
-                fw={700}
-              >
-                {t("home.skills.title")}
-              </Title>
-            </Box>
-            <Box mt={{ base: 0, sm: "xs" }}>
-              <Text
-                c="light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-6))"
-                size="sm"
-                fw={600}
-              >
-                {t("home.skills.description")}
-              </Text>
-            </Box>
-          </Group>
-        </Grid.Col>
-        <Grid.Col span={{ base: 12 }}>
-          <SoftSkills items={softSkills} />
-        </Grid.Col>
-      </Grid>
-      <Space h="xl" />
-      <Grid>
-        <Grid.Col span={12}>
-          <HardSkills categories={
-            [{
-              value: "languages",
-              label: t("home.skills.categories.languages"),
-              icon: <IconLanguage size={22} color="var(--mantine-color-dimmed)" />,
-              items: languages,
-            }, {
-              value: "frameworks",
-              label: t("home.skills.categories.frameworks"),
-              icon: <IconSourceCode size={22} color="var(--mantine-color-dimmed)" />,
-              items: frameworks,
-            }, {
-              value: "tools",
-              label: t("home.skills.categories.tools"),
-              icon: <IconTools size={22} color="var(--mantine-color-dimmed)" />,
-              items: tools,
-            }, {
-              value: "databases",
-              label: t("home.skills.categories.databases"),
-              icon: <IconDatabase size={22} color="var(--mantine-color-dimmed)" />,
-              items: databases,
-            }]
-          }
-          />
-        </Grid.Col>
-      </Grid>
-    </Container>
+    <>
+      <Grid.Col
+        span={{ base: 12, sm: 7 }}
+        order={{ base: 2, sm: 1 }}
+      >
+        <Title
+          order={2}
+          fw={700}
+          fz={{ base: "1.5rem", sm: "1.8rem", lg: "2rem" }}
+        >
+          {t("home.skills.title")}
+        </Title>
+        <Box mb={{ base: 0, sm: "1rem", lg: "1.3rem" }}>
+          <Text
+            c="light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-6))"
+            size="sm"
+          >
+            {t("home.skills.description")}
+          </Text>
+        </Box>
+        <SoftSkills items={softSkills} />
+      </Grid.Col>
+      <Grid.Col
+        span={{ base: 12, sm: 5 }}
+        order={{ base: 1, sm: 2 }}
+      >
+        <CloudImage
+          alt="Skills"
+          width={500}
+          height={500}
+          sizes="100vw"
+          src="marprez-dev/profile/skills_fjqdje.png"
+          style={{
+            width: "100%",
+            height: "auto",
+          }}
+          loading="lazy"
+          quality="auto"
+        />
+      </Grid.Col>
+      <Grid.Col span={12} order={3}>
+        <HardSkills categories={
+          [{
+            value: "languages",
+            label: t("home.skills.categories.languages"),
+            icon: <IconLanguage size={22} color="var(--mantine-color-dimmed)" />,
+            items: languages,
+          }, {
+            value: "frameworks",
+            label: t("home.skills.categories.frameworks"),
+            icon: <IconSourceCode size={22} color="var(--mantine-color-dimmed)" />,
+            items: frameworks,
+          }, {
+            value: "tools",
+            label: t("home.skills.categories.tools"),
+            icon: <IconTools size={22} color="var(--mantine-color-dimmed)" />,
+            items: tools,
+          }, {
+            value: "databases",
+            label: t("home.skills.categories.databases"),
+            icon: <IconDatabase size={22} color="var(--mantine-color-dimmed)" />,
+            items: databases,
+          }]
+        }
+        />
+      </Grid.Col>
+    </>
   )
 }

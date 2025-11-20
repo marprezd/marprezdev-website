@@ -1,4 +1,4 @@
-// src/components/organisms/skills/HardSkills.tsx
+// src/components/organisms/About/HardSkills.tsx
 "use client"
 
 import type { JSX } from "react"
