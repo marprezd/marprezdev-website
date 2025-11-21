@@ -11,12 +11,10 @@ import {
   Stack,
   Text,
   ThemeIcon,
-  useComputedColorScheme,
 } from "@mantine/core"
 import { IconBrandBluesky, IconBrandDiscord, IconBrandGithub, IconBrandUpwork, IconQuote } from "@tabler/icons-react"
 import { useTranslations } from "next-intl"
 import CloudImage from "../../atoms/CloudImage"
-import * as styles from "./Profile.css"
 
 // TODO: Add more job networks
 const jobNetworks = [
@@ -59,7 +57,6 @@ const socialNetworks = [
  */
 export default function Profile() {
   const t = useTranslations("messages")
-  const colorScheme = useComputedColorScheme()
   const yearsExperience = Math.floor((new Date().getTime() - new Date("2019-08-13").getTime()) / 3.15576e10)
 
   return (
@@ -78,11 +75,11 @@ export default function Profile() {
         mt="lg"
       >
         <Stack gap="xs">
-          <Text size="sm" fw={600} c={colorScheme === "dark" ? "gray.3" : "gray.7"} tt="uppercase">
+          <Text size="sm" fw={600} c="light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-3))" tt="uppercase">
             {t("home.profile.title")}
           </Text>
           <Text
-            c={colorScheme === "dark" ? "gray.5" : "gray.8"}
+            c="light-dark(var(--mantine-color-gray-8), var(--mantine-color-gray-5))"
             size="sm"
           >
             {t("home.profile.description")}
@@ -110,10 +107,10 @@ export default function Profile() {
               gravity="faces"
             />
             <Stack gap={0}>
-              <Text fw={600} size="sm" c={colorScheme === "dark" ? "gray.5" : "gray.9"}>
+              <Text fw={600} size="sm" c="light-dark(var(--mantine-color-gray-9), var(--mantine-color-gray-5))">
                 Mario Pérez
               </Text>
-              <Text size="xs" c={colorScheme === "dark" ? "gray.6" : "gray.7"}>
+              <Text size="xs" c="light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-6))">
                 {t("home.profile.profession")}
                 {" "}
                 |
@@ -126,7 +123,7 @@ export default function Profile() {
 
         <Group mt={{ base: 32, lg: 56 }} justify="space-between" wrap="wrap">
           <Group gap="xs">
-            <Text size="xs" c={colorScheme === "dark" ? "gray.6" : "gray.8"}>
+            <Text size="xs" c="light-dark(var(--mantine-color-gray-8), var(--mantine-color-gray-6))">
               {t("home.profile.hire-me")}
             </Text>
             <Group
