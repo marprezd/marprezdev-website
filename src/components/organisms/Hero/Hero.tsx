@@ -2,6 +2,7 @@ import { Button, Container, Group, rem, Stack, Text, Title } from "@mantine/core
 import { IconBrandGithub } from "@tabler/icons-react"
 import { useTranslations } from "next-intl"
 import Link from "next/link"
+import * as styles from "./Hero.css"
 
 export default function Hero() {
   const t = useTranslations("messages")
@@ -13,21 +14,20 @@ export default function Hero() {
         align="center"
         gap="md"
         mt="md"
-        py={{ base: rem(50), sm: rem(80), md: rem(100), lg: rem(120) }}
+        py={{ base: rem(70), sm: rem(90), md: rem(100), lg: rem(120) }}
         px={{ base: rem(1), sm: rem(50), md: rem(60), lg: rem(50) }}
       >
         {/* Title and description */}
         {t.rich("home.hero.title", {
           h1: chunks => (
             <Title
-              ta="center"
+              className={styles.title}
+              order={1}
               fz={{
-                base: rem(30),
-                sm: rem(36),
-                md: rem(48),
-                lg: rem(60),
+                base: rem(25),
+                sm: rem(34),
+                md: rem(42),
               }}
-              fw={800}
             >
               {chunks}
             </Title>
@@ -50,10 +50,14 @@ export default function Hero() {
         })}
 
         <Text
-          ta="center"
-          size="md"
-          style={{ color: `light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-6))` }}
-          maw={600}
+          className={styles.description}
+          fz={{
+            base: "sm",
+            sm: "md",
+          }}
+          style={{
+            color: `light-dark(var(--mantine-color-gray-7), var(--mantine-color-gray-6))`,
+          }}
         >
           {t("home.hero.description")}
         </Text>
@@ -64,10 +68,10 @@ export default function Hero() {
         >
           <Button
             component={Link}
-            size="md"
-            radius="xl"
-            variant="filled"
             href="/blog"
+            size="sm"
+            radius="xl"
+            variant="light"
             color="cyan"
           >
             {t("home.hero.started")}
@@ -78,7 +82,7 @@ export default function Hero() {
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            size="md"
+            size="sm"
             radius="xl"
             variant="default"
             leftSection={<IconBrandGithub size={18} />}
