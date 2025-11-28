@@ -14,9 +14,23 @@ declare module "next-intl" {
 }
 
 /**
- * CSS module declaration
+ * CSS module declarations
  */
+declare module "*.module.css" {
+  const classes: { readonly [className: string]: string }
+  export default classes
+}
+
 declare module "*.css" {
-  const content: { [className: string]: string }
-  export default content
+  // Generic side-effect import (e.g. import "./styles.css") or non-module
+  // CSS. Consumers may import as a string or just perform a side-effect import.
+  const css: { [className: string]: string } | string
+  export default css
+}
+
+// Explicit declaration for Mantine's side-effect stylesheet so editors/TS
+// servers recognize the import `import '@mantine/core/styles.css'`.
+declare module "@mantine/core/styles.css" {
+  const css: { [key: string]: string } | string
+  export default css
 }
