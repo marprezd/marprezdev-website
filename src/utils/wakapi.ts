@@ -1,6 +1,6 @@
 // src/utils/wakapi.ts
-import { Buffer } from "node:buffer"
-import process from "node:process"
+/* eslint-disable unicorn/prefer-node-protocol, node/prefer-global/process */
+import { Buffer } from "buffer"
 
 // Environment variables
 const wakapi_api_key: string = process.env.WAKAPI_API_KEY || ""

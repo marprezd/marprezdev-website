@@ -1,5 +1,5 @@
 // src/utils/hostConfig.ts
-import process from "node:process"
+/* eslint-disable node/prefer-global/process */
 
 // Default port
 export const port = process.env.PORT || 3000
