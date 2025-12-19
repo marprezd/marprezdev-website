@@ -7,7 +7,7 @@ export async function getGitHubStats(): Promise<Stats | null> {
   if (typeof window === "undefined") {
     // Server-side: import fetchStats from our server helper to avoid an HTTP hop
     try {
-      const { fetchStats } = await import("@/lib/github")
+      const { fetchStats } = await import("@/utils/github")
       return await fetchStats()
     }
     catch (err) {
